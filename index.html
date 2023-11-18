@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,27 +17,65 @@
 </head>
 <body>
 
-  Learn to code by watching others
+  <!-- Learn to code by watching others
 
   See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
   but understanding how developers think is invaluable. 
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
+   -->
+   <div class="container">
+    <main>
+      <div class="container__form">
+        <h2 class="container__header container__header--form"><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        <form action="/" class="form">
+          
+          <div class="form__input">
+            <div class="form__input--field">
+              <input type="text" placeholder="First Name" id="firstname">
+              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+            </div>
+            <div class="form__input--error error-message">error message</div>
+          </div>
+  
+          <div class="form__input">
+            <div class="form__input--field">
+              <input type="text" placeholder="Last Name" id="lastname">
+              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+            </div>
+            <div class="form__input--error error-message">error message</div>
+          </div>
+  
+          <div class="form__input">
+            <div class="form__input--field">
+              <input type="text" placeholder="Email Address" id="email">
+              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+            </div>
+            <div class="form__input--error error-message">error message</div>
+          </div>
+  
+          <div class="form__input">
+            <div class="form__input--field">
+              <input type="password" placeholder="Password" id="password">
+              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+            </div>
+            <div class="form__input--error error-message">error message</div>
+          </div>
+    
+          <button type="submit" class="form__btn">Claim your free trial </button>
+    
+          <div class="form__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Vontrelle Collins</a>.
+      </p>
+    </footer>
+   </div>
+  
 </body>
 </html>
