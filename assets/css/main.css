@@ -11,6 +11,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
+  background-color: #ff7979;
 }
 
 .container {
@@ -18,15 +19,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ff7979;
   background-image: url("../images/bg-intro-mobile.png");
-  height: 100vh;
   background-repeat: no-repeat;
   width: 375px;
 }
 
 .container__form {
   width: 327px;
+  margin-bottom: 64px;
 }
 
 .container__header {
@@ -56,6 +56,7 @@ body {
   background: #5e54a4;
   border-radius: 10px;
   height: 88px;
+  margin-top: 88px;
   margin-bottom: 24px;
   box-shadow: 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -114,3 +115,18 @@ body {
 .form__terms span {
   color: #ff7979;
 }
+
+.container__content {
+  width: 327px;
+  color: #fff;
+  text-align: center;
+}
+
+.container__content h2 {
+  margin-top: 64px;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

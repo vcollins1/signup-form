@@ -8,74 +8,64 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="./assets/css/main.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="container">
+    <section class="container__content">
+      <h2>Learn to code by watching others</h2>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </section>
 
-  <!-- Learn to code by watching others
+    <section class="container__form">
+      <h2 class="container__header container__header--form"><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+      <form action="/" class="form">
+        
+        <div class="form__input">
+          <div class="form__input--field">
+            <input type="text" placeholder="First Name" id="firstname">
+            <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+          </div>
+          <div class="form__input--error error-message">error message</div>
+        </div>
 
-   -->
-   <div class="container">
-    <main>
-      <div class="container__form">
-        <h2 class="container__header container__header--form"><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
-  
-        <form action="/" class="form">
-          
-          <div class="form__input">
-            <div class="form__input--field">
-              <input type="text" placeholder="First Name" id="firstname">
-              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
-            </div>
-            <div class="form__input--error error-message">error message</div>
+        <div class="form__input">
+          <div class="form__input--field">
+            <input type="text" placeholder="Last Name" id="lastname">
+            <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
           </div>
-  
-          <div class="form__input">
-            <div class="form__input--field">
-              <input type="text" placeholder="Last Name" id="lastname">
-              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
-            </div>
-            <div class="form__input--error error-message">error message</div>
-          </div>
-  
-          <div class="form__input">
-            <div class="form__input--field">
-              <input type="text" placeholder="Email Address" id="email">
-              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
-            </div>
-            <div class="form__input--error error-message">error message</div>
-          </div>
-  
-          <div class="form__input">
-            <div class="form__input--field">
-              <input type="password" placeholder="Password" id="password">
-              <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
-            </div>
-            <div class="form__input--error error-message">error message</div>
-          </div>
-    
-          <button type="submit" class="form__btn">Claim your free trial </button>
-    
-          <div class="form__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></div>
-        </form>
-      </div>
-    </main>
+          <div class="form__input--error error-message">error message</div>
+        </div>
 
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Vontrelle Collins</a>.
-      </p>
-    </footer>
-   </div>
+        <div class="form__input">
+          <div class="form__input--field">
+            <input type="text" placeholder="Email Address" id="email">
+            <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+          </div>
+          <div class="form__input--error error-message">error message</div>
+        </div>
+
+        <div class="form__input">
+          <div class="form__input--field">
+            <input type="password" placeholder="Password" id="password">
+            <img src="./assets/images/icon-error.svg" alt="error icon" class="form__input--error">
+          </div>
+          <div class="form__input--error error-message">error message</div>
+        </div>
   
+        <button type="submit" class="form__btn">Claim your free trial </button>
+  
+        <div class="form__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></div>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Vontrelle Collins</a>.
+    </p>
+  </footer>
 </body>
 </html>
