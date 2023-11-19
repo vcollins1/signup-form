@@ -151,4 +151,12 @@ body {
     font-size: 50px;
     line-height: 55px;
   }
+
+  .form__btn {
+    cursor: pointer;
+  }
+
+  .form__btn:hover {
+    background: #77e2b3;
+  }
 }
