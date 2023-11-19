@@ -144,12 +144,10 @@ body {
   }
 
   .container__header--form {
-    flex-direction: row;
+    display: block;
+    text-align: center;
+    line-height: 60px;
     height: 60px;
-  }
-
-  .container__header--form span {
-    margin-left: 2px;
   }
 
   .container__form {
