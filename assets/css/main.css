@@ -133,9 +133,14 @@ body {
 
 
 @media screen and (min-width: 1150px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+
   .container {
     width: 1200px;
     flex-direction: row;
+    background-image: none;
   }
 
   .container__form {
