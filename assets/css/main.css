@@ -143,6 +143,15 @@ body {
     background-image: none;
   }
 
+  .container__header--form {
+    flex-direction: row;
+    height: 60px;
+  }
+
+  .container__header--form span {
+    margin-left: 2px;
+  }
+
   .container__form {
     width: 540px;
   }
