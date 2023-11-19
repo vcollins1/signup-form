@@ -130,3 +130,25 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1150px) {
+  .container {
+    width: 1200px;
+    flex-direction: row;
+  }
+
+  .container__form {
+    width: 540px;
+  }
+
+  .container__content {
+    width: 525px;
+    text-align: left;
+  }
+
+  .container__content h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
