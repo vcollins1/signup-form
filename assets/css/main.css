@@ -7,34 +7,47 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-family: 'Poppins', sans-serif;
   background-color: #ff7979;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/bg-intro-mobile.png");
-  background-repeat: no-repeat;
-  width: 375px;
+  height: 100vh;
 }
 
-.container__form {
+.card {
+  background-image: url("../images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+   text-align: center;
+}
+
+.card__content {
+  width: 327px;
+  margin: 88px 0;
+  color: #fff;
+}
+
+.card__content h2 {
+  font-size: 28px;
+  letter-spacing: -0.29px;
+  margin-bottom: 16px;
+}
+
+
+
+.form {
   width: 327px;
   margin-bottom: 64px;
 }
 
 .container__header {
-  color: #fff;
   font-size: 28px;
 }
 
-.form {
+.form__inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,22 +59,23 @@ body {
   box-shadow: 0 10px rgba(0, 0, 0, 0.2)
 }
 
-.container__header--form {
+.form__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 15px;
   font-weight: 100;
+  letter-spacing: 0.27px;
   background: #5e54a4;
+  color: #fff;
   border-radius: 10px;
   height: 88px;
-  margin-top: 88px;
   margin-bottom: 24px;
   box-shadow: 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container__header--form span {
+.form__header span {
   font-weight: 900;
 }
 
@@ -116,52 +130,41 @@ body {
   color: #ff7979;
 }
 
-.container__content {
-  width: 327px;
-  color: #fff;
-  text-align: center;
-}
-
-.container__content h2 {
-  margin-top: 64px;
-  margin-bottom: 16px;
-  font-size: 28px;
-}
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   body {
     background-image: url("../images/bg-intro-desktop.png");
   }
 
-  .container {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1200px;
-    flex-direction: row;
     background-image: none;
   }
 
-  .container__header--form {
+  .form__header {
     display: block;
     text-align: center;
     line-height: 60px;
     height: 60px;
   }
 
-  .container__form {
+  .form {
     width: 540px;
+    margin-left: 45px;
+    margin-bottom: 0;
   }
 
-  .container__content {
+  .card__content {
     width: 525px;
     text-align: left;
   }
 
-  .container__content h2 {
+  .card__content h2 {
     font-size: 50px;
     line-height: 55px;
+    letter-spacing: -0.52px;
   }
 
   .form__input--field,
